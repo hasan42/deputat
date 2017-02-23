@@ -220,6 +220,22 @@ input[type="submit"], input[type="button"], button, .red-button {
 	display: inline-block;
 	vertical-align: middle;
 	font-size:32px;
+	&.deputat-img {
+		position: relative;
+		&::after {
+			width:130px;
+			height:86px;
+			content:"";
+			position: absolute;
+			top:-20px;
+			right: -110px;
+			background-image: url('../images/pavel-min.png');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		
+	}
 }
 
 .header-feedback {

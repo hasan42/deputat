@@ -218,6 +218,21 @@ button:hover svg,
   vertical-align: middle;
   font-size: 32px;
 }
+.header_name.deputat-img {
+  position: relative;
+}
+.header_name.deputat-img::after {
+  width: 130px;
+  height: 86px;
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -110px;
+  background-image: url('../images/pavel-min.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .header-feedback {
   float: right;
 }

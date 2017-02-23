@@ -57,6 +57,7 @@ $(document).ready(function() {
 
 	$(".menu_opener").click(function() {//открытие меню
 		$(".menu-block").toggleClass("menu-block__open");
+		$(".header_block").toggleClass("cloud-fon");
 		/*if( w_w > 768){ //десктоп - новости скроллом
 			w_h_mb = w_h - 86;
 			$(".menu-block").css("height", w_h_mb+"px" );
