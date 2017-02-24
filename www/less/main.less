@@ -204,12 +204,69 @@ input[type="submit"], input[type="button"], button, .red-button {
 	position: relative;
 	z-index: 150;
 }
+
 .menu_opener {
 	display: inline-block;
 	margin-right:20px;
 	vertical-align: middle;
 	cursor:pointer;
+	input {
+	  display: none;
+	}
+
+	label {
+	  display: block;
+	  width: 24px;
+	  height: 24px;
+	  position: relative;
+	  span {
+	    position: relative;
+	    top: 24px;
+	      
+	    &,
+	    &:before,
+	    &:after {
+	      display: block;
+	      background: #000;
+	      width: 24px;
+	      height: 4px;
+	    }
+
+	    &:before,
+	    &:after {
+	      content: '';
+	      position: absolute;
+	    }
+
+	    &:before { 
+	      bottom: 24px; 
+	    }
+	    
+	    &:after { 
+	      top: 24px;
+	    }
+	       
+
+	    :checked ~ & {
+	      
+	      & {
+	        width: 0;
+	        &:before {
+	           transform: rotate(45deg);
+	           bottom: 0;
+	        }
+	        &:after {
+	          transform: rotate(-45deg);
+	          top: 0;
+	        }
+	      }
+	      
+	    }
+	  }
+	}
 }
+
+
 .find_opener {
 	display: inline-block;
 	margin-right:20px;
@@ -275,6 +332,15 @@ input[type="submit"], input[type="button"], button, .red-button {
 		display:block;
 		font-size:18px;
 		margin-bottom:20px;
+		&.menu-item__lvl-1 {
+			margin-left:20px;
+		}
+		&.menu-item__lvl-2 {
+			margin-left:40px;
+		}
+		&.menu-item__lvl-3 {
+			margin-left:60px;
+		}
 	}
 }
 

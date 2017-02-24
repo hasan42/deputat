@@ -270,6 +270,15 @@ button:hover svg,
   font-size: 18px;
   margin-bottom: 20px;
 }
+.menu-block .menu-item.menu-item__lvl-1 {
+  margin-left: 20px;
+}
+.menu-block .menu-item.menu-item__lvl-2 {
+  margin-left: 40px;
+}
+.menu-block .menu-item.menu-item__lvl-3 {
+  margin-left: 60px;
+}
 /* -------- /header -----------*/
 /* -------- content -----------*/
 .main {

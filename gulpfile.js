@@ -69,12 +69,7 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', 'img', 'less', 'scripts'], function() {
 
-    var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'www/css/main.css',
-        'www/css/media.css',
-        'www/css/libs.min.css',
-        'www/css/easydropdown.css'
-        ])
+    var buildCss = gulp.src('www/css/**/*')// Переносим библиотеки в продакшен
     .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('www/fonts/**/*') // Переносим шрифты в продакшен

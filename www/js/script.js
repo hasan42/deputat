@@ -16,6 +16,8 @@ function resize() {
 	        height: new_height
 	    });
 	    if( $(".news-block").hasClass('slick-initialized') ) { $(".news-block").slick('unslick'); }
+	    hbIsIndex = $(".header_block").hasClass("header_block__index");//проверка на индексную страницу
+	    if( !hbIsIndex ){ $(".header_block").addClass("cloud-fon"); }
 	}else{//мобильник - новости слайдером
 		$(".news-block").slimScroll({ destroy:true });
 		$(".news-block").slick({
@@ -26,6 +28,7 @@ function resize() {
 			arrows: false,
 		});
 		$(".news-block").css("height","auto");
+		$(".header_block").removeClass("cloud-fon");
 	}
 
 }
@@ -57,12 +60,13 @@ $(document).ready(function() {
 	$(".find_opener").click(function() {//открытие поиска
 		$(".find-block").toggleClass("find-block__open");
 		$(".find-block input").focus();
+		if( $(window).width() < 768 ){ $(".header_name").toggle(); }
 	});
 
 	$(".menu_opener").click(function() {//открытие меню
 		hbIsIndex = $(".header_block").hasClass("header_block__index");//проверка на индексную страницу
 		$(".menu-block").toggleClass("menu-block__open");
-		if( !hbIsIndex ){
+		if( (!hbIsIndex) && ($(window).width() > 768) ){
 			$(".header_block").toggleClass("cloud-fon");
 		}
 	});

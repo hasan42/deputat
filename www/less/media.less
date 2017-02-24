@@ -45,11 +45,16 @@
 
 	.header_name {
 		font-size: 22px;
-		float: left;
-		margin-top: 10px;
+		vertical-align: top;
+		&.deputat-img {
+			&::after {
+				display:none;
+			}
+		}
 	}
 
 	.header-feedback {
+		float:none;
 		font-size:14px;
 		svg {
 			width:20px;
@@ -58,11 +63,10 @@
 	}
 
 	.find-block {
-		display:inline-block;
 	}
 
 	.deputat-image {
-		background-image:none, url('../images/index-fon.jpg');
+		background-image:none;
 	}
 
 	.index-info__name {

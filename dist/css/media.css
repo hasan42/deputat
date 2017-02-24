@@ -39,21 +39,21 @@
   }
   .header_name {
     font-size: 22px;
-    float: left;
-    margin-top: 10px;
+    vertical-align: top;
+  }
+  .header_name.deputat-img::after {
+    display: none;
   }
   .header-feedback {
+    float: none;
     font-size: 14px;
   }
   .header-feedback svg {
     width: 20px;
     height: 20px;
   }
-  .find-block {
-    display: inline-block;
-  }
   .deputat-image {
-    background-image: none, url('../images/index-fon.jpg');
+    background-image: none;
   }
   .index-info__name {
     font-size: 32px;
