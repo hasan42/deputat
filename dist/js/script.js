@@ -62,10 +62,15 @@ $(document).ready(function() {
 		$(".find-block input").focus();
 		if( $(window).width() < 768 ){ $(".header_name").toggle(); }
 	});
+	$(".find-block input").blur(function() {//открытие поиска
+		$(".find-block").toggleClass("find-block__open");
+		if( $(window).width() < 768 ){ $(".header_name").toggle(); }
+	});
 
 	$(".menu_opener").click(function() {//открытие меню
 		hbIsIndex = $(".header_block").hasClass("header_block__index");//проверка на индексную страницу
 		$(".menu-block").toggleClass("menu-block__open");
+		$(".menu_opener").toggleClass("menu_opener__open");
 		if( (!hbIsIndex) && ($(window).width() > 768) ){
 			$(".header_block").toggleClass("cloud-fon");
 		}

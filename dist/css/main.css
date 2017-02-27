@@ -4,7 +4,7 @@ html {
 body {
   font: 14px "Roboto", sans-serif;
   color: #333333;
-  line-height: 1.2;
+  line-height: 1.6;
   background-color: #e4e3e3;
   font-weight: 300;
   padding: 0;
@@ -34,6 +34,7 @@ textarea,
 h1 {
   font-size: 32px;
   font-weight: 500;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 h2 {
@@ -43,10 +44,12 @@ h3 {
   font-size: 18px;
   font-weight: 300;
   margin-top: 0;
+  line-height: 1.3;
 }
 h4 {
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.3;
 }
 h5 {
   font-size: 12px;
@@ -202,10 +205,159 @@ button:hover svg,
   z-index: 150;
 }
 .menu_opener {
-  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 0;
   margin-right: 20px;
+  display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+}
+.menu_opener .menu_opener__bit-1::before {
+  content: '';
+  left: 0px;
+  top: 4px;
+  position: absolute;
+  width: 12px;
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  height: 2px;
+  background: #333333;
+  -webkit-transition: top 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s, -webkit-transform 0.3s;
+}
+.menu_opener .menu_opener__bit-1::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  width: 12px;
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  height: 2px;
+  background: #333333;
+  -webkit-transition: top 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s, -webkit-transform 0.3s;
+}
+.menu_opener .menu_opener__bit-2 {
+  position: absolute;
+  width: 24px;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  background: #333333;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: width 0.3s 0.6s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.6s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.6s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.6s, -webkit-transform 0.3s 0.3s;
+}
+.menu_opener .menu_opener__bit-3::before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 12px;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  height: 2px;
+  background: #333333;
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s, -webkit-transform 0.3s;
+}
+.menu_opener .menu_opener__bit-3::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  right: 0px;
+  width: 12px;
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+  height: 2px;
+  background: #333333;
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s, -webkit-transform 0.3s;
+}
+.menu_opener.menu_opener__open .menu_opener__bit-1:before {
+  top: 0px;
+  width: 16px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.menu_opener.menu_opener__open .menu_opener__bit-1:after {
+  top: 0px;
+  width: 16px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.menu_opener.menu_opener__open .menu_opener__bit-2 {
+  width: 0px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: width 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.menu_opener.menu_opener__open .menu_opener__bit-3:before {
+  bottom: 0px;
+  width: 16px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+}
+.menu_opener.menu_opener__open .menu_opener__bit-3:after {
+  bottom: 0px;
+  width: 16px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
 }
 .find_opener {
   display: inline-block;
@@ -245,12 +397,14 @@ button:hover svg,
   max-width: 500px;
 }
 .find-block input {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
   border: 0;
-  padding: 0;
+  padding: 5px 7px;
+  margin-right: 20px;
 }
 .find-block.find-block__open {
   display: inline-block;
+  margin-right: 20px;
 }
 .menu-block {
   display: none;
@@ -272,12 +426,15 @@ button:hover svg,
 }
 .menu-block .menu-item.menu-item__lvl-1 {
   margin-left: 20px;
+  font-size: 16px;
 }
 .menu-block .menu-item.menu-item__lvl-2 {
   margin-left: 40px;
+  font-size: 14px;
 }
 .menu-block .menu-item.menu-item__lvl-3 {
   margin-left: 60px;
+  font-size: 12px;
 }
 /* -------- /header -----------*/
 /* -------- content -----------*/
@@ -394,7 +551,7 @@ button:hover svg,
   right: 0px;
   top: 0;
   width: 1px;
-  height: 70%;
+  height: 90%;
   opacity: 0.3;
 }
 .document-item:nth-child(3n)::after {
@@ -512,7 +669,7 @@ button:hover svg,
 .bio-avatar.bio-avatar__fixed {
   position: fixed;
   top: 15px;
-  max-width: 195px;
+  max-width: 165px;
 }
 /* -------- /content -----------*/
 /* -------- footer -----------*/
@@ -523,5 +680,8 @@ button:hover svg,
 .footer-wrap {
   min-height: 70px;
   margin: -70px auto 0;
+}
+.lancelab {
+  margin: 10px 0;
 }
 /* -------- /footer -----------*/

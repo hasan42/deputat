@@ -4,20 +4,52 @@
 		"selected_items":
 		[
 			[
-				"pad",
+				"font-s",
+				"font-size"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"padd",
 				"padding"
 			],
 			[
 				"margin-",
-				"margin-bottom"
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pad",
+				"padding"
 			],
 			[
 				"fl",
 				"float"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"backg",
@@ -40,16 +72,8 @@
 				"footer\tTag"
 			],
 			[
-				"tex",
-				"text-center"
-			],
-			[
 				"col-",
 				"col-md-offset-2"
-			],
-			[
-				"margin",
-				"margin-top"
 			],
 			[
 				"list-s",
@@ -72,16 +96,8 @@
 				"contacts"
 			],
 			[
-				"di",
-				"div\tTag"
-			],
-			[
 				"cons",
 				"console"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"t",
@@ -204,18 +220,67 @@
 	},
 	"expanded_folders":
 	[
-		"/C/WebServers/home/deputat"
+		"/C/WebServers/home/deputat",
+		"/C/WebServers/home/deputat/www",
+		"/C/WebServers/home/deputat/www/js"
 	],
 	"file_history":
 	[
+		"/C/WebServers/home/deputat/www/less/main.less",
+		"/C/WebServers/home/deputat/www/less/media.less",
+		"/C/WebServers/home/deputat/www/index.html",
+		"/C/WebServers/home/deputat/www/feedback.html",
+		"/C/WebServers/home/deputat/www/news.html",
+		"/C/WebServers/home/deputat/www/news-page.html",
+		"/C/WebServers/home/deputat/www/js/script.js",
+		"/C/WebServers/home/deputat/www/contacts.html",
+		"/C/WebServers/home/deputat/www/main.html",
+		"/C/WebServers/home/deputat/www/education.html",
+		"/C/WebServers/home/deputat/www/bio.html",
+		"/C/WebServers/home/deputat/www/respect.html",
+		"/C/WebServers/home/deputat/dist/images/menu.svg",
+		"/E/temp/lancelab/!!!dostupi.txt",
 		"/C/WebServers/home/deputat/gulpfile.js",
-		"/C/WebServers/home/capital/www/main.html",
+		"/C/WebServers/home/deputat2/www/main.html",
+		"/E/temp/lancelab/deputat/frontend/deputat-47c42b17f04841800e22dc31583f68d678db3867/www/main.html",
+		"/C/WebServers/home/deputat/.gitignore",
+		"/C/WebServers/home/deputat/www/images/ll.svg",
 		"/C/WebServers/home/capital/www/less/main.less",
+		"/C/WebServers/home/capital/www/js/script.js",
+		"/C/WebServers/home/capital/www/buy2.html",
+		"/C/WebServers/home/deputat/www/images/doc-ico.svg",
+		"/C/WebServers/home/capital/www/about.html",
+		"/C/WebServers/home/deputat/www/images/select.svg",
+		"/C/WebServers/home/capital/www/css/main.css",
+		"/C/WebServers/home/kkinvest/www/js/script.js",
+		"/E/temp/lancelab/deputat/ico/facebooka.svg",
+		"/C/WebServers/home/applecentre/www/js/script.js",
+		"/C/WebServers/home/capital/www/index.html",
+		"/C/WebServers/home/deputat/www/libs/slick/src/slick.js",
+		"/C/WebServers/home/deputat/www/libs/slick/README.md",
+		"/C/WebServers/home/deputat/www/libs/slick/dist/slick.js",
+		"/C/WebServers/home/capital/www/js/slick/slick.min.js",
+		"/C/WebServers/home/deputat/www/libs/slick/dist/slick.min.js",
+		"/C/WebServers/home/deputat/www/libs/slick/.bower.json",
+		"/C/WebServers/home/deputat/www/js/jquery.mCustomScrollbar.concat.min.js",
+		"/C/WebServers/home/daidgest/www/js/script.js",
+		"/C/WebServers/home/daidgest/www/index.html",
+		"/C/WebServers/home/kkinvest/www/index.html",
+		"/C/WebServers/home/kkinvest/www/css/styles.css",
+		"/C/WebServers/home/deputat/www/images/alarm.svg",
+		"/C/WebServers/home/deputat/www/images/menu.svg",
+		"/C/WebServers/home/deputat/.bowerrc",
+		"/C/WebServers/home/deputat/www/libs/slick/bower.json",
+		"/C/WebServers/home/deputat/www/src/helpers/_stuff.jade",
+		"/C/WebServers/home/deputat/www/src/helpers/_params.jade",
+		"/C/WebServers/home/deputat/www/src/components/_head.jade",
+		"/C/WebServers/home/deputat/www/src/index.jade",
+		"/C/WebServers/home/deputat/www/src/helpers/_mixins.jade",
+		"/C/WebServers/home/deputat/www/src/helpers/_variables.jade",
+		"/C/WebServers/home/capital/www/main.html",
 		"/C/WebServers/home/capital/www/less/media.less",
 		"/C/WebServers/home/capital/gulpfile.js",
 		"/C/WebServers/home/deputat/www/libs/bootstrap/less/bootstrap.less",
-		"/C/WebServers/home/deputat/.bowerrc",
-		"/C/WebServers/home/deputat/www/index.html",
 		"/E/temp/lancelab/olympic-plaza.com/2017-02-09/001/index.php",
 		"/E/temp/lancelab/olympic-plaza.com/2017-02-08/001/style.css",
 		"/E/temp/lancelab/olympic-plaza.com/2017-02-08/001/footer.php",
@@ -228,7 +293,6 @@
 		"/E/temp/lancelab/olympic-plaza.com/2017-02-08/001/index.php",
 		"/E/temp/lancelab/system capital/chart/d3-plugins-master/graph/graph.js",
 		"/E/temp/lancelab/system capital/chart/d3-plugins-master/graph/index.html",
-		"/E/temp/lancelab/!!!dostupi.txt",
 		"/C/WebServers/home/capital/www/data.tsv",
 		"/C/WebServers/home/capital/www/js/d3.min.js",
 		"/E/temp/lancelab/system capital/chart/Chart.js-master/docs/00-Getting-Started.md",
@@ -265,15 +329,12 @@
 		"/C/WebServers/home/applecentre/www/support.html",
 		"/C/WebServers/home/applecentre/www/images/copyright_ll.svg",
 		"/C/Users/lancelab/Downloads/car(2).svg",
-		"/C/WebServers/home/capital/www/index.html",
 		"/E/temp/lancelab/д/!!!dostupi(От Рустама).txt",
 		"/E/temp/lancelab/д/служебные.txt",
 		"/C/WebServers/home/capital/.bowerrc",
 		"/C/WebServers/home/capital/www/Capital/.gitattributes",
-		"/C/WebServers/home/capital/www/css/main.css",
 		"/C/WebServers/home/capital/package.json",
 		"/C/WebServers/home/capital/capital.sublime-project",
-		"/C/WebServers/home/applecentre/www/js/script.js",
 		"/E/temp/lancelab/lancelab.ru/Untitled-2.svg",
 		"/E/temp/lancelab/lancelab.ru/copyright_svg.svg",
 		"/C/WebServers/home/applecentre/www/images/ll.svg",
@@ -292,54 +353,11 @@
 		"/Z/home/applecentre/www/css/styles.css",
 		"/Z/home/applecentre/www/support.html",
 		"/Z/home/applecentre/www/product.html",
-		"/Z/home/applecentre/www/catalog.html",
-		"/Z/home/applecentre/www/catalog-0.html",
-		"/Z/home/applecentre/www/accessory.html",
-		"/Z/home/applecentre/www/accessories.html",
-		"/Z/home/applecentre/www/accessories-0.html",
-		"/Z/home/applecentre/www/repair.html",
-		"/Z/home/applecentre/www/actions.html",
-		"/Z/home/applecentre/www/about.html",
-		"/Z/home/applecentre/www/reviews.html",
-		"/Z/home/applecentre/www/index.html",
-		"/Z/home/applecentre/www/guarantee.html",
-		"/Z/home/applecentre/www/faq.html",
-		"/Z/home/applecentre/www/delivery.html",
-		"/Z/home/applecentre/www/contacts.html",
-		"/Z/home/apple/www/repair.html",
-		"/Z/home/apple/www/index.html",
-		"/Z/home/applecentre/www/robots.txt",
-		"/Z/home/funeral/www/contacts.html",
-		"/Z/home/funeral/www/actions.html",
-		"/Z/home/funeral/www/catalog.html",
-		"/Z/home/funeral/www/actions-it.html",
-		"/Z/home/funeral/www/services.html",
-		"/Z/home/funeral/www/services-it.html",
-		"/Z/home/funeral/www/product.html",
-		"/Z/home/funeral/www/price.html",
-		"/Z/home/funeral/www/novelty.html",
-		"/Z/home/funeral/www/js/script.js",
-		"/Z/home/funeral/www/css/styles.css",
-		"/Z/home/funeral/www/index.html",
-		"/E/temp/lancelab/lancelab.ru/2017-01-13/001/clients/index.php",
-		"/E/temp/lancelab/apple.sc/design/jpg/2/iconMail.svg",
-		"/E/temp/lancelab/apple.sc/design/jpg/2/contbutton-spec.svg",
-		"/Z/home/applecentre/www/images/iconCall.svg",
-		"/Z/home/medic/www/index.html",
-		"/Z/home/medic/www/contacts.html",
-		"/Z/home/medic/www/about.html",
-		"/Z/home/medic/www/personal.html",
-		"/Z/home/medic/www/services.html",
-		"/Z/home/medic/www/services-list.html",
-		"/Z/home/medic/www/personal-list.html",
-		"/Z/home/medic/www/css/styles.less",
-		"/Z/home/medic/www/js/script.js",
-		"/E/temp/lancelab/redkvadrat.net/2017-01-12/001/styles.css",
-		"/Z/home/applecentre/www/images/logo.svg"
+		"/Z/home/applecentre/www/catalog.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -354,6 +372,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".contacts-item",
+			"tvoy",
+			"dist",
+			"select-style",
+			"%'",
 			"#hotlog_counter",
 			"section.olympNavOrder .calendar1",
 			"section.olympNavOrder .calendar1, section.olympNavOrder .calendar2",
@@ -529,7 +552,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
