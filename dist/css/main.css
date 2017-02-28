@@ -190,7 +190,7 @@ button:hover svg,
 }
 .white-fon {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 30px;
 }
 .contacts-fon {
@@ -378,7 +378,7 @@ button:hover svg,
   height: 86px;
   content: "";
   position: absolute;
-  top: -20px;
+  top: -15px;
   right: -110px;
   background-image: url('../images/pavel-min.png');
   background-position: top;
@@ -496,6 +496,7 @@ button:hover svg,
 .social-block.social-block__fixed {
   position: fixed;
   top: 15px;
+  margin-left: 9px;
 }
 .social-item {
   display: table;
@@ -614,6 +615,9 @@ button:hover svg,
 }
 .contacts-item {
   height: 290px;
+}
+.contacts-item.white-fon {
+  padding: 20px;
 }
 .contacts-item h2 {
   margin-top: 0;

@@ -2,13 +2,22 @@
   .bio-avatar.bio-avatar__fixed {
     position: fixed;
     top: 15px;
-    max-width: 160px;
+    max-width: 140px;
+  }
+  .white-fon {
+    padding: 30px;
   }
   .contacts-item {
     height: 340px;
   }
+  .social-block.social-block__fixed {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 991px) {
+  .white-fon {
+    padding: 20px;
+  }
   .deputat-image {
     background-position: left bottom -100px, center;
     background-size: auto 80%, cover;
@@ -23,7 +32,16 @@
   .bio-avatar.bio-avatar__fixed {
     position: fixed;
     top: 15px;
-    max-width: 160px;
+    max-width: 95px;
+  }
+  .bio-avatar h2 {
+    font-size: 18px;
+  }
+  .bio-avatar p {
+    font-size: 12px;
+  }
+  .social-block.social-block__fixed {
+    margin-left: 23px;
   }
 }
 @media screen and (max-width: 767px) {

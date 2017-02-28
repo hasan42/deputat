@@ -35,18 +35,31 @@ function resize() {
 
 $(window).scroll(function(){
 	//скролл соц.блока, блока в биографии
-	if( $(window).height() - $(window).scrollTop() < 500) {
+	//console.log($(window).scrollTop());
+	if( $(window).scrollTop() > 210) {
 		if( $(window).width() > 768 ){
-			$(".social-block").addClass("social-block__fixed");
 			$(".bio-avatar").addClass("bio-avatar__fixed");
 		}else{
-			$(".social-block").removeClass("social-block__fixed");
 			$(".bio-avatar").removeClass("bio-avatar__fixed");
 		}
 	}else{
-		$(".social-block").removeClass("social-block__fixed");
 		$(".bio-avatar").removeClass("bio-avatar__fixed");
 	}
+
+	widthforNews = $(".news-page__header").outerHeight() + $(".header_block").outerHeight();
+	console.log(widthforNews);
+	console.log( $(".news-page__header").outerHeight() );
+	console.log( $(".header_block").outerHeight() );
+	if( $(window).scrollTop() > widthforNews ) {
+		if( $(window).width() > 768 ){
+			$(".social-block").addClass("social-block__fixed");
+		}else{
+			$(".social-block").removeClass("social-block__fixed");
+		}
+	}else{
+		$(".social-block").removeClass("social-block__fixed");
+	}
+
 });
 
 $(window).on("resize",function(){
